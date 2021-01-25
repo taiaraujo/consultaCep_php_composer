@@ -1,0 +1,23 @@
+{
+    "name": "taia/consultacep",
+    "description": "busca de CEP online",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Natália Freitas Araújo",
+            "email": "taiaraujo20@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">= 7.2.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Search": "src/"
+        },
+        "psr-4": {
+            "taia\\ConsultaCep\\": "src/"
+        }
+    }
+}
