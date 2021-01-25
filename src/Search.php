@@ -7,7 +7,7 @@ class Search{
     private $url = "http://viacep.com.br/ws/";
 
     public function getAddressFromZipcode(string $zipCode): array {
-        // retira o traço so cep, caso o usuário tenha inserido
+        // retira o traço do cep, caso o usuário tenha inserido
         $zipCode = preg_replace('/[^0-9]/im', '', $zipCode);
 
         $get = file_get_contents($this -> url . $zipCode . "/json");
